@@ -19,3 +19,4 @@ elif operacao == '/':
         print('Erro: Divisão por zero não é permitida.')
 else:
     print('Operação inválida. Por favor, escolha uma operação válida.')
+    
