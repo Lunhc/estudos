@@ -1,2 +1,2 @@
 # estudos
-Repositori do curso de Git da Comunicadade Dev Completo
+Repositori do curso de Git da Comunicadade Dev Completo.
