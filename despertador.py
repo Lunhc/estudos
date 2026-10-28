@@ -1,21 +1,16 @@
-primeiro_numero = int(input('Digite o primeiro numero: '))
-segundo_numero = int(input('Digite o segundo numero: '))
-operacao = input('Digite a operação desejada! \n+ para soma \n- para subtração \n* para multiplicação \n/ para divisão \n')
+import time
+from datetime import datetime
 
-if operacao == '+':
-    resultado = primeiro_numero + segundo_numero
-    print(f'O resultado da soma é: {resultado}')
-elif operacao == '-':
-    resultado = primeiro_numero - segundo_numero
-    print(f'O resultado da subtração é: {resultado}')
-elif operacao == '*':
-    resultado = primeiro_numero * segundo_numero
-    print(f'O resultado da multiplicação é: {resultado}')
-elif operacao == '/':
-    if segundo_numero != 0:
-        resultado = primeiro_numero / segundo_numero
-        print(f'O resultado da divisão é: {resultado}')
-    else:
-        print('Erro: Divisão por zero não é permitida.')
-else:
-    print('Operação inválida. Por favor, escolha uma operação válida.')
+hora_alarme = input('Que horas voce quer o alarme? (Fromato HH:MM) ')
+
+print('Alarme definido para', hora_alarme)
+
+while True:
+    agora = datetime.now() .strftime('%H:%M')
+    
+    if agora == hora_alarme:
+        print('Alarme! Hora de acordar!')
+        break
+
+    time.sleep(30)
+
